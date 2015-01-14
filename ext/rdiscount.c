@@ -121,6 +121,7 @@ int rb_rdiscount__get_flags(VALUE ruby_obj)
 
 void Init_rdiscount()
 {
+    fprintf(stderr, "init RDiscount\n");
     rb_cRDiscount = rb_define_class("RDiscount", rb_cObject);
     rb_define_method(rb_cRDiscount, "to_html", rb_rdiscount_to_html, -1);
     rb_define_method(rb_cRDiscount, "toc_content", rb_rdiscount_toc_content, -1);

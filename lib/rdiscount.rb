@@ -23,6 +23,7 @@
 #     require 'bluecloth'
 #   end
 #
+$stderr.puts "requring rdiscount"
 class RDiscount
   VERSION = '1.6.8'
 
@@ -94,3 +95,4 @@ end
 Markdown = RDiscount unless defined? Markdown
 
 require 'rdiscount.so'
+$stderr.puts "required rdiscount"
